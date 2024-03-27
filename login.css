@@ -1,0 +1,29 @@
+/* Login/Register Form */
+#login-register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-register {
+    display: flex;
+    justify-content: center;
+}
+
+#login-form,
+#register-form {
+    display: none;
+    margin-top: 20px;
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 5px; /* Add border radius for curved edges */
+}
+
+#login-form form,
+#register-form form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#login-form p {
+    margin-top: 10px;
+}

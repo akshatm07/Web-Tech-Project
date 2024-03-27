@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes Organizer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <h1>Notes Organizer</h1>
@@ -21,18 +19,14 @@
                         <a href="#">Department</a>
                         <div class="dropdown-content">
                             <a href="#">Year 1</a>
-                            <br>
                             <a href="#">Year 2</a>
-                            <br>
                             <a href="#">Year 3</a>
-                            <br>
                             <a href="#">Year 4</a>
-                            <br>
                         </div>
                     </div>
                 </li>
                 <div id="login">
-                    <li><a href="#">Login/Register</a></li>
+                    <li><a href="login_reg.html" target="_blank">Login/Register</a></li>
                 </div>
                 <li>
                     <div id="mode-toggle">
@@ -43,60 +37,27 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="container">
+    <a href="" ></a>
         <h2>Welcome to Notes Organizer!</h2>
-        <p>This is a platform where you can organize your notes based on department and year.</p>
-        <p>You can also upload notes using the Google Drive link provided below.</p>
-        <div id="login-register">
-            <h3>Login/Register</h3>
-            <div class="login-register">
-                <div id="login-form" style="display: none;">
-                    <form>
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit">Login</button>
-                    </form>
-                </div>
-                <div id="register-form" style="display: none;">
-                    <form>
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email Address">
-                        <input type="password" placeholder="Password">
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <span class="content-box">
+            <h2>Upload Notes</h2>
+            <button>Submit</button>
+        </span>
+        <span class="content-box">
+            <h2>Donate Old Books</h2>
+            <button>Donate</button>
+        </span>
+        <span class="content-box ">
+            <h2>Book Suggestions</h2>
+            <button>Add Suggestions</button>
+        </span>
     </section>
     <footer>
         <p>Upload your notes <a href="#">here</a></p>
-        <p> &copy; Designed and Developed By Karan Singh And Akshat Mishra </p>
+        <p>Follow us on <a href="#">X</a> and <a href="#">Instagram</a></p>
+        <p>&copy; Designed and Developed By Karan Singh And Akshat Mishra</p>
     </footer>
-
-    <script>
-        const loginDiv = document.getElementById("login");
-        const loginForm = document.getElementById("login-form");
-        const registerForm = document.getElementById("register-form");
-
-        loginDiv.addEventListener("click", function () {
-            if (loginForm.style.display === "none") {
-                loginForm.style.display = "block";
-                registerForm.style.display = "none";
-            } else {
-                loginForm.style.display = "none";
-            }
-        });
-
-        document.getElementById("register").addEventListener("click", function () {
-            loginForm.style.display = "none";
-            registerForm.style.display = "block";
-        });
-
-        document.getElementById("mode-toggle-checkbox").addEventListener("change", function () {
-            document.body.classList.toggle("dark-mode");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
-

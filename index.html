@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Organizer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Notes Organizer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Notes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Department</a>
+                        <div class="dropdown-content">
+                            <a href="#">Year 1</a>
+                            <br>
+                            <a href="#">Year 2</a>
+                            <br>
+                            <a href="#">Year 3</a>
+                            <br>
+                            <a href="#">Year 4</a>
+                            <br>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://drive.google.com/drive/u/0/folders/14t5xEcop1w1KEo3OiknMct-f5nBuoExu"
+                        target="_blank">Upload Notes</a></li>
+                <div id="Login">
+                    <li> <a href="#login-register"> Login /Register </a></li>
+                    <!-- HTML for Login Form -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to Notes Organizer!</h2>
+        <p>This is a platform where you can organize your notes based on department and year.</p>
+        <p>You can also upload notes using the Google Drive link provided below.</p>
+        <div id="login-register">
+            <h3>Login/Register</h3>
+            <div class="login-register">
+                <div id="login">
+                    <a href="#login">Login</a>
+                    Login
+                    <form>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div id="register">
+                    <a href="#register">Register</a>
+                    Register
+                    <form>
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Upload your notes <a href="#">here</a></p>
+        <p> &copy; Designed and Developed By Karan Singh And Akshat Mishra </p>
+    </footer>
+</body>
+
+</html>
