@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('BackgoundSec.jpg'); /* Replace 'BackgroundSec.jpg' with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures body takes up at least the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffB8D1;
+    color: #333333;
+    padding: 10px;
+}
+
+nav {
+    background-color: #ffB8D1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 8px 12px; /* Adjusted padding for better spacing */
+    border-radius: 5px; /* Added border radius for button-like appearance */
+    transition: background-color 0.3s ease; /* Added smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #ffB8D1; /* Darker background color on hover */
+}
+
+#login {
+    margin-left: 20px;
+}
+
+#login a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px; /* Adjusted padding for better spacing */
+    border-radius: 5px; /* Added border radius for button-like appearance */
+    transition: background-color 0.3s ease; /* Added smooth transition */
+}
+
+#login a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Dropdown menu styles for Notes section */
+.notes-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.notes-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.notes-dropdown .dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.notes-dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Sub-dropdown */
+.notes-dropdown .sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.notes-dropdown .dropdown-content:hover .sub-dropdown {
+    display: block;
+}
+
+.notes-dropdown .sub-dropdown a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.notes-dropdown .sub-dropdown a + a {
+    margin-top: 5px;
+}
+
+
+
+/* CSS for Form Styling */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#login:hover {
+    cursor: pointer;
+    background-color:#9c27b0;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown menu styles */
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed background color to match the rest of the navigation bar */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white; /* Changed text color to white for better visibility */
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Sub-dropdown */
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed background color to match the rest of the navigation bar */
+    min-width: 100px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content:hover .sub-dropdown {
+    display: block;
+}
+
+.sub-dropdown a {
+    color: white; /* Changed text color to white for better visibility */
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-dropdown a + a {
+    margin-top: 5px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    background-color: #DDFDFE;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Dropdown container */
+.dropdown-content {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sub-dropdown */
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px; /* Adjust as needed */
+    padding: 10px;
+    z-index: 1;
+}
+
+/* Show sub-dropdown when hovering over parent */
+.dropdown-content:hover .sub-dropdown {
+    display: block;
+}
+
+/* Style the sub-dropdown links */
+.sub-dropdown a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Add space between each sub-dropdown item */
+.sub-dropdown a + a {
+    margin-top: 5px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; /* Adjust spacing as needed */
+}
+
+.spherical-box {
+    width: 400px; /* Increased width */
+    height: 200px; /* Increased height */
+    border-radius: 20px; /* Adjust border radius for curvature */
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+}
+
+.upload-notes {
+    background-color: #ff9c00; /* Adjust colors as needed */
+}
+
+.donate-books {
+    background-color: #4caf50; /* Adjust colors as needed */
+}
+
+.book-suggestions {
+    background-color: #2196f3; /* Adjust colors as needed */
+}
+
+.spherical-box h2 {
+    margin-top: 10px; /* Adjust margin as needed */
+    color: #333; /* Adjust text color as needed */
+}
+
+.spherical-box button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.spherical-box button:hover {
+    background-color: #ddd; /* Adjust hover color as needed */
+}
