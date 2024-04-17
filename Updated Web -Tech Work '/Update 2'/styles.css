@@ -16,8 +16,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffB8D1;
-    color: #333333;
+    background: rgba(255, 184, 209, 0.8);
+   /*  background-color: #ffB8D1; */
+    color: black;
     padding: 10px;
 }
 
@@ -219,9 +220,8 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #DDFDFE;
-    color: #333333;
-    background-color: #DDFDFE;
+   /*  background-color: #DDFDFE; */
+    background: rgba(221, 253, 254, 0.8);
     color: #333333;
     text-align: center;
     padding: 10px;
@@ -469,3 +469,5 @@ body.dark-mode {
     background-color: #555555; /* Dark background color */
     color: #ffffff; /* Light text color */
 }
+
+

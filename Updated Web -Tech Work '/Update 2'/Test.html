@@ -7,7 +7,7 @@
     <meta name="description" content="Notes Organizer - A platform to organize and share study materials">
     <meta name="keywords" content="notes, organizer, study, education, books, suggestions">
     <title>Notes Organizer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles_test.css">
 </head>
 
 <body>
@@ -16,27 +16,27 @@
         <nav>
             <ul>
 
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-
-
+                <li><a href="/" id="home-link" >Home</a></li>
+                <li><a href="About.html">About</a></li>
 
                 <label for="Notes">Notes:</label>
                 <li class="dropdown">
-
-                    <select name="Notes" id="Notes">
-                        <div class="dropdown-content">
-                            <option value="Year 1">Year 1</option>
-                            <option value="Year 2">Year 2</option>
-                            <option value="Year 3">Year 3</option>
-                            <option value="Year 4">Year 4</option>
-                    </select>
-
-
-                    </div>
+                
+                <select name="Notes" id="Notes">
+                <div class="dropdown-content">
+                
+                <option value="Year 1">Year 1</option>
+                <option value="Year 2">Year 2</option>
+                <option value="Year 3">Year 3</option>
+                <option value="Year 4">Year 4</option>
+                </select>
+                
+                </div>
                 </li>
+                
+                <li><a href="login.php"  id="login-link" >Login/Register</a></li>
+                
 
-                <li><a href="LoginReg.html">Login/Register</a></li>
                 <li>
                     <div id="mode-toggle">
                         <input type="checkbox" id="mode-toggle-checkbox">
@@ -48,10 +48,10 @@
     </header>
 
     <div class="overlay-image">
-        <img src="OverlayImage2.1.png" alt="Overlay Image">
+          <img src= "DigitalImage5.png" alt="Overlay Image">  
         <div class="text-container">
             <div class="overlay-text"> A New way  to organize your notes!! Discover Options to  add, edit and delete Notes! </div>
-        </div>
+                 </div>
     </div>
     
     <section class="container">
@@ -62,11 +62,11 @@
         </div>
         <div class="spherical-box donate-books">
             <h2>Donate Books</h2>
-            <button>Donate</button>
+            <button id="donate-button" >Donate</button>
         </div>
         <div class="spherical-box book-suggestions">
             <h2>Book Suggestions</h2>
-            <button>Add Suggestions</button>
+            <button id="suggestions-button">Add Suggestions</button>
         </div>
     </section>
 
@@ -77,7 +77,7 @@
         <p>Follow us on <a href="#">X</a> and <a href="#">Instagram</a></p>
         <p>&copy; Designed and Developed By Karan Singh And Akshat Mishra</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script_test.js"></script>
 </body>
 
 </html>

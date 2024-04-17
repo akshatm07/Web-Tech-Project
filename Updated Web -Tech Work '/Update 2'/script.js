@@ -6,6 +6,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const navBar = document.querySelector("nav");
     const container = document.querySelector(".container");
     const sphericalBoxes = document.querySelectorAll(".spherical-box");
+    const homeLink = document.getElementById("home-link");
+    const loginLink = document.getElementById("login-link");
+    const donateButton = document.getElementById('donate-button');
+    const suggestionsButton = document.getElementById('suggestions-button');
+  // Event listener for home link
+
+     // Handle home link click
+    homeLink.addEventListener("click", function() {
+        // Navigate to home page
+    });
+
+    // Handle login link click
+    loginLink.addEventListener("click", function() {
+        // Navigate to login page
+    });
+    donateButton.addEventListener('click', () => {
+        window.location.href = 'donate.html';
+    });
+
+    suggestionsButton.addEventListener('click', () => {
+        window.location.href = 'add_suggestion.html';
+    });
 
     // Event listener for dark mode toggle checkbox
     modeToggleCheckbox.addEventListener("change", function () {
@@ -54,6 +76,21 @@ function validateLogin() {
 
     return true;
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const homeLink = document.getElementById("home-link");
+
+    homeLink.addEventListener("click", function (event) {
+        event.preventDefault();  // Prevent the default action of the link
+        location.reload();  // Reload the page
+    });
+    const uploadNotesSubmit = document.querySelector(".upload-notes button");
+
+    uploadNotesSubmit.addEventListener("click", function() {
+        window.location.href = "https://drive.google.com/drive/u/0/folders/1stURQwqYcsU9k_LG-Eo1IKKS30ft_Ko6";
+    });
+    
+});
+
 
 
 
