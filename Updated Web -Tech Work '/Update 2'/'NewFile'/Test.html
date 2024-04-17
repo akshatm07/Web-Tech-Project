@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notes Organizer - A platform to organize and share study materials">
+    <meta name="keywords" content="notes, organizer, study, education, books, suggestions">
+    <title>Notes Organizer</title>
+    <link rel="stylesheet" href="css/styles_test.css">
+</head>
+
+<body>
+    <header>
+        <h1>Notes Organizer</h1>
+        <nav>
+            <ul>
+
+                <li><a href="/" id="home-link" >Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <label for="Notes">Notes:</label>
+                <li class="dropdown">
+                
+                <select name="Notes" id="Notes">
+                <div class="dropdown-content">
+                
+                <option value="Year 1">Year 1</option>
+                <option value="Year 2">Year 2</option>
+                <option value="Year 3">Year 3</option>
+                <option value="Year 4">Year 4</option>
+                </select>
+                
+                </div>
+                </li>
+                
+                <li><a href="login.php"  id="login-link" >Login/Register</a></li>
+                
+
+                <li>
+                    <div id="mode-toggle">
+                        <input type="checkbox" id="mode-toggle-checkbox">
+                        <label for="mode-toggle-checkbox">Dark Mode</label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay-image">
+          <img src= "DigitalImage5.png" alt="Overlay Image">  
+        <div class="text-container">
+            <div class="overlay-text"> A New way  to organize your notes!! Discover Options to  add, edit and delete Notes! </div>
+                 </div>
+    </div>
+    
+    <section class="container">
+       
+        <div class="spherical-box upload-notes">
+            <h2>Upload Notes</h2>
+            <button>Submit</button>
+        </div>
+        <div class="spherical-box donate-books">
+            <h2>Donate Books</h2>
+            <button id="donate-button" >Donate</button>
+        </div>
+        <div class="spherical-box book-suggestions">
+            <h2>Book Suggestions</h2>
+            <button id="suggestions-button">Add Suggestions</button>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Upload your notes <a href="#">here</a></p>
+        <p>Follow us on <a href="#">X</a> and <a href="#">Instagram</a></p>
+        <p>&copy; Designed and Developed By Karan Singh And Akshat Mishra</p>
+    </footer>
+    <script src="js/script_test.js"></script>
+</body>
+
+</html>
